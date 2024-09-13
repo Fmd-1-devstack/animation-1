@@ -10,6 +10,7 @@
     height: 50vh;
     width: 100%;
     background-color: #1480B7;
+    position: relative;
 }
 .road-outer{
     height: 40vh;
@@ -143,3 +144,20 @@
     animation-delay: 0.4s;
 }
 /*rain-drop*/
+/*mount*/
+.mount{
+    position: absolute;
+}
+.mount-1{
+    bottom: 0;
+}
+.mount-2{
+    left: 500px;
+    bottom: 0;
+    z-index: 1;
+}
+.mount-3{
+    right: 0;
+    bottom: 0;
+}
+/*mount*/
