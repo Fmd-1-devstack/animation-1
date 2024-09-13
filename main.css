@@ -11,6 +11,7 @@
     width: 100%;
     background-color: #1480B7;
     position: relative;
+    overflow: hidden;
 }
 .road-outer{
     height: 40vh;
@@ -25,14 +26,15 @@
 /*rain-drop*/
 .rain{
     position: absolute;
-    width: 2px;
-    height: 60px;
-    background-color: rgba(255,255,255,0.2);
+    width:10px;
+    height: 10px;
+    background-color: rgba(255,255,255,1);
     bottom: 100%;
     animation-name: fall;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     z-index: 2;
+    border-radius: 50px;
 }
 @keyframes fall {
     0%{
@@ -162,3 +164,36 @@
     bottom: 0;
 }
 /*mount*/
+/*cloud*/
+.cloud{
+    position: absolute;
+    animation-name: cloudMove;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.cloud-1{
+    right: 100%;
+    animation-duration: 25s;
+}
+.cloud-2{
+    right: 100%;
+    animation-duration: 25s;
+    animation-delay: 10s;
+    top: 150px;
+}
+.cloud-3{
+    right: 100%;
+    animation-duration: 25s;
+    animation-delay: 15s;
+    top: 80px;
+}
+
+@keyframes cloudMove {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(120vw);
+    }
+}
+/*cloud*/
